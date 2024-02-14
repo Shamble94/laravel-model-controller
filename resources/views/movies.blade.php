@@ -17,8 +17,18 @@
 
 <body>
 
-<h1>Visualizza film</h1>
-<a href="{{ route("movies") }}"><button class="btn btn-success">Vai</button></a>
+
+<div class="container">
+    <div class="row">
+        <h1 class="text-center">Lista Film</h1>
+        <div class="col-12 col-md-4 col-lg-3" >
+            
+            <div class="card">
+               {{ $movies["title"]}}
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
