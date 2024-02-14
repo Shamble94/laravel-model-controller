@@ -20,18 +20,18 @@
 
 <div class="container">
     <div class="row">
-        <h1 class="text-center m-5">Lista Film</h1>
-        @foreach ($movies as $movie)
+        <h1 class="text-center m-5">Dettagli film</h1>
+      
         <div class="col-12 col-md-4 col-lg-4 my-4" >
             <div class="card m-3 border-0">
-                Titolo:<h1> {{ $movie->title }}</h1>
+                
                 Titolo originale:<h5> {{ $movie->original_title }}</h5>
                 Nazionalita: <h5>{{ $movie->nationality }}</h5>
                 Anno di uscita: <h6>{{ $movie->date }}</h6>
                 Voto: <h6>{{ $movie->vote }}</h6>
             </div>
         </div>
-        @endforeach
+      
     </div>
 </div>
 </body>
